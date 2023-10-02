@@ -1,8 +1,14 @@
-﻿@{
+﻿@model UmsaSofttekFront.ViewModels.HomeViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
+@Html.HiddenFor(x => x.Token)
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @Html.DisplayFor(x => x.Token))
 </div>
+
+<script src="~/js/Home/Home.js"></script>
+```
